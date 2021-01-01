@@ -6,7 +6,8 @@ export interface Theme {
 export const terang: Theme = {
     name: "terang",
     properties: {
-        "--warna-latar": "white",
+        "--warna-latar-utama": "#F2F2F2",
+        "--warna-latar-card": "#ffffff",
         "--warna-text": "black"
     }
 };
@@ -14,7 +15,8 @@ export const terang: Theme = {
 export const gelap: Theme = {
     name: "gelap",
     properties: {
-        "--warna-latar": "black",
+        "--warna-latar-utama": "#353535",
+        "--warna-latar-card": "#6b6b6b",
         "--warna-text": "white"
     }
 };

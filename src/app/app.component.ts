@@ -7,7 +7,10 @@ import { TemaService } from './tema.service';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
     title = 'angular-theme';
+    temaTxt = 'Tema Gelap';
+
     constructor(
         private themeService: TemaService
     ) {}
@@ -16,8 +19,10 @@ export class AppComponent {
     toggleTheme() {
         if (this.themeService.isDarkTheme()) {
             this.themeService.setLightTheme();
+            this.temaTxt = 'Tema Gelap';
         } else {
             this.themeService.setDarkTheme();
+            this.temaTxt = 'Tema Terang';
         }
     }
 }
